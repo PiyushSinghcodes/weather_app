@@ -34,4 +34,6 @@ def weather_data():
     return render_template('weather_data.html', weather_data=None)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080)  # Change 127.0.0.1 to 0.0.0.0
+
+
