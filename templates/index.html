@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f0f8ff;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .weather-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .weather-card h2 {
+            font-size: 2em;
+        }
+        .weather-card p {
+            font-size: 1.2em;
+        }
+        .feature {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .feature h2 {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Weather App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/weather_data">Current Weather</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/summary">Daily Weather Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/alerts">Alerts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center mb-4">Welcome to the Weather App</h1>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="weather-card">
+                    <h2>Jalandhar</h2>
+                    <p><strong>Temperature:</strong> 25°C</p>
+                    <p><strong>Feels Like:</strong> 27°C</p>
+                    <p><strong>Condition:</strong> Sunny</p>
+                    <p><strong>Humidity:</strong> 60%</p>
+                    <p><strong>Pressure:</strong> 1012 hPa</p>
+                    <p><strong>Wind Speed:</strong> 5 m/s</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="weather-card">
+                    <h2>Lucknow</h2>
+                    <p><strong>Temperature:</strong> 18°C</p>
+                    <p><strong>Feels Like:</strong> 17°C</p>
+                    <p><strong>Condition:</strong> Cloudy</p>
+                    <p><strong>Humidity:</strong> 70%</p>
+                    <p><strong>Pressure:</strong> 1008 hPa</p>
+                    <p><strong>Wind Speed:</strong> 3 m/s</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="weather-card">
+                    <h2>Bihar</h2>
+                    <p><strong>Temperature:</strong> 30°C</p>
+                    <p><strong>Feels Like:</strong> 33°C</p>
+                    <p><strong>Condition:</strong> Partly Cloudy</p>
+                    <p><strong>Humidity:</strong> 50%</p>
+                    <p><strong>Pressure:</strong> 1005 hPa</p>
+                    <p><strong>Wind Speed:</strong> 6 m/s</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature">
+            <h2>Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Current Weather</h3>
+                    <p>Get real-time temperature, conditions, humidity, and wind speed for your selected city to plan your day effectively.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Daily Weather Summary</h3>
+                    <p>View a comprehensive overview of daily weather trends, including average temperatures and dominant conditions for informed planning.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Alerts</h3>
+                    <p>Receive timely notifications about severe weather events and advisories to ensure your safety and preparedness.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
